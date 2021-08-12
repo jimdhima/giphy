@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack demo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="container_search">
+        <label for="search">Search Term</label>
+        <input type="text" id="search" name="search" class="search" />
+        <button type="button" class="seach_button" id="search_button">
+          Search
+        </button>
+      </header>
+
+      <section id="container_results"></section>
+
+      <footer id="pagination"></footer>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="overlay"></div>
+      <div class="modal_content">
+        <!-- Dynamic Section -->
+        <h2 class="modal_title" id="modal_title">Modal Title</h2>
+        <p class="modal_body" id="modal_body"></p>
+        <!-- End of Dynamic Section -->
+        <button type="button" title="Close" class="close_modal">Close</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="dist/app.bundle.js"></script>
+  </body>
+</html>
